@@ -926,7 +926,7 @@ plt.show();
 
 # # Prediction
 
-model = USCTmap()#
+model = mWnet()#
 model_path ='model_1.pt'
 state = torch.load(str(model_path))
 state = {key.replace('module.', ''): value for key, value in state['model'].items()}
